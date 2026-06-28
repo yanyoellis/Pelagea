@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Stories, care guides and inspiration from the world beneath the surface.">
+  <title>Journal | PELAGEA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="journal-page">
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header" data-header>
+    <a class="brand" href="index.html" aria-label="PELAGEA home">
+      <svg class="brand-mark" viewBox="0 0 34 34" aria-hidden="true"><path d="M17 29V10"/><path d="M17 18c-4-3-7-6-9-11"/><path d="M17 17c4-3 7-6 9-11"/><path d="M17 23c-5-1-9-4-13-9"/><path d="M17 23c5-1 9-4 13-9"/><path d="M11 16c-2 0-4-1-6-3"/><path d="M23 16c2 0 4-1 6-3"/></svg>
+      <span>PELAGEA</span>
+    </a>
+    <nav class="main-nav" data-nav aria-label="Main navigation">
+      <a href="index.html">Home</a><a href="collection.html">Collection</a><a href="about.html">About us</a><a class="is-active" href="journal.html" aria-current="page">Journal</a><a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <span class="icon-link static-control" aria-label="Search is not available yet"><span>Search</span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="5"/><path d="m15 15 4 4"/></svg></span>
+      <span class="icon-link static-control" aria-label="Cart is not available yet"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 8h10l1 12H6L7 8Z"/><path d="M9 8a3 3 0 0 1 6 0"/></svg><span>Cart (0)</span></span>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-label="Open menu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="journal-hero" aria-labelledby="journal-title">
+      <div class="journal-hero-scene" aria-hidden="true"></div>
+      <div class="page-shell journal-hero-inner">
+        <div class="journal-hero-copy">
+          <h1 id="journal-title">Journal</h1><span class="short-rule" aria-hidden="true"></span>
+          <p class="journal-hero-lead">Stories from beneath<br>the surface.</p>
+          <p>Insights, care guides, species stories and inspiration from our world. For aquarists, by aquarists.</p>
+          <a class="text-link" href="#articles">Explore articles <span aria-hidden="true">&rarr;</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="journal-catalog section-block" id="articles" aria-label="Journal articles">
+      <div class="page-shell">
+        <div class="journal-toolbar">
+          <div class="journal-filters" role="group" aria-label="Filter articles">
+            <span>Browse by:</span>
+            <button class="is-active" type="button" data-journal-filter="all">All</button>
+            <button type="button" data-journal-filter="care">Care guide</button>
+            <button type="button" data-journal-filter="species">Species</button>
+            <button type="button" data-journal-filter="breeding">Breeding</button>
+            <button type="button" data-journal-filter="design">Design</button>
+            <button type="button" data-journal-filter="behind">Behind the scenes</button>
+          </div>
+          <label class="journal-sort">Sort by:
+            <select data-journal-sort aria-label="Sort articles"><option value="latest">Latest</option><option value="oldest">Oldest</option><option value="read">Reading time</option></select>
+          </label>
+        </div>
+
+        <div class="journal-grid" data-journal-catalog>
+          <article class="journal-card journal-card-featured" data-category="design" data-date="20240518" data-read="6">
+            <img src="images/journal-feature.png" alt="Planted aquarium illuminated from above">
+            <div class="journal-card-shade" aria-hidden="true"></div>
+            <div class="journal-card-content"><p class="journal-card-kicker">Featured</p><h2><a href="article-balance.html">The Art of<br>Creating Balance</a></h2><span class="short-rule" aria-hidden="true"></span><p>How nature, patience and detail come together to create a thriving aquarium ecosystem.</p><a href="article-balance.html">Read article <span aria-hidden="true">&rarr;</span></a><small>May 18, 2024 &nbsp;&middot;&nbsp; 6 min read</small></div>
+          </article>
+          <article class="journal-card journal-card-tall" data-category="care" data-date="20240510" data-read="4">
+            <img src="images/journal-arowana.png" alt="Portrait of a golden Arowana"><div class="journal-card-content"><p class="journal-card-kicker">Care guide</p><h2><a href="article-arowana.html">Arowana Care 101</a></h2><p>Everything you need to know about keeping arowanas healthy and stress-free.</p><small>May 10, 2024 &nbsp;&middot;&nbsp; 4 min read</small><a class="journal-arrow" href="article-arowana.html" aria-label="Read Arowana Care 101">&rarr;</a></div>
+          </article>
+          <article class="journal-card journal-card-tall" data-category="species" data-date="20240428" data-read="5">
+            <img src="images/journal-rays.png" alt="Patterned freshwater stingray"><div class="journal-card-content"><p class="journal-card-kicker">Species</p><h2><a href="article-rays.html">The Grace of Rays</a></h2><p>Discover the most fascinating ray species and their natural habitats.</p><small>Apr 28, 2024 &nbsp;&middot;&nbsp; 5 min read</small><a class="journal-arrow" href="article-rays.html" aria-label="Read The Grace of Rays">&rarr;</a></div>
+          </article>
+          <article class="journal-card journal-card-compact" data-category="design" data-date="20240420" data-read="3">
+            <img src="images/journal-design.png" alt="Minimal blackwater aquascape"><div class="journal-card-content"><p class="journal-card-kicker">Design</p><h2><a href="article-blackwater.html">Blackwater Aesthetics</a></h2><p>Why simplicity and shadows create timeless beauty.</p><small>Apr 20, 2024 &nbsp;&middot;&nbsp; 6 min read</small><a class="journal-arrow" href="article-blackwater.html" aria-label="Read Blackwater Aesthetics">&rarr;</a></div>
+          </article>
+          <article class="journal-card journal-card-compact" data-category="breeding" data-date="20240414" data-read="6">
+            <img src="images/journal-breeding.png" alt="School of small fish"><div class="journal-card-content"><p class="journal-card-kicker">Behind the scenes</p><h2><a href="article-breeding.html">Breeding with Purpose</a></h2><p>Ethical breeding, genetic diversity and responsible trade.</p><small>Apr 14, 2024 &nbsp;&middot;&nbsp; 6 min read</small><a class="journal-arrow" href="article-breeding.html" aria-label="Read Breeding with Purpose">&rarr;</a></div>
+          </article>
+          <article class="journal-card journal-card-compact" data-category="behind" data-date="20240406" data-read="4">
+            <img src="images/journal-concept.png" alt="Aquascaper building a planted aquarium"><div class="journal-card-content"><p class="journal-card-kicker">Behind the scenes</p><h2><a href="article-concept.html">From Concept to Reality</a></h2><p>A look into how we create our aquariums.</p><small>Apr 18, 2024 &nbsp;&middot;&nbsp; 6 min read</small><a class="journal-arrow" href="article-concept.html" aria-label="Read From Concept to Reality">&rarr;</a></div>
+          </article>
+          <article class="journal-card journal-card-compact" data-category="care" data-date="20240330" data-read="5">
+            <img src="images/journal-water.png" alt="Aquatic lily pads"><div class="journal-card-content"><p class="journal-card-kicker">Care guide</p><h2><a href="article-water.html">Water Quality Matters</a></h2><p>Understanding the invisible foundation of a healthy tank.</p><small>May 22, 2024 &nbsp;&middot;&nbsp; 6 min read</small><a class="journal-arrow" href="article-water.html" aria-label="Read Water Quality Matters">&rarr;</a></div>
+          </article>
+        </div>
+
+        <p class="catalog-empty" data-journal-empty hidden>No articles match this category.</p>
+
+        <section class="journal-subscribe" id="subscribe" aria-labelledby="subscribe-title">
+          <div class="journal-subscribe-copy"><p class="section-kicker">Stay inspired</p><h2 id="subscribe-title">Dive Deeper.<br>Stay Informed.</h2><p>Subscribe to our journal and be the first to receive new articles, care tips and exclusive updates.</p></div>
+          <img src="images/journal-newsletter.png" alt="Underwater aquascape framed by an arch">
+          <form class="journal-subscribe-form"><label class="sr-only" for="journal-email">Your email address</label><div class="input-row"><input id="journal-email" type="email" autocomplete="email" placeholder="Your email address"><button type="submit" aria-label="Subscribe">&rarr;</button></div><label class="journal-consent"><input type="checkbox"> <span>I agree to receive news and updates from Pelagea.</span></label></form>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="page-shell footer-grid journal-footer-grid">
+      <div class="footer-brand"><svg class="footer-mark" viewBox="0 0 34 34" aria-hidden="true"><path d="M17 29V10"/><path d="M17 18c-4-3-7-6-9-11"/><path d="M17 17c4-3 7-6 9-11"/><path d="M17 23c-5-1-9-4-13-9"/><path d="M17 23c5-1 9-4 13-9"/><path d="M11 16c-2 0-4-1-6-3"/><path d="M23 16c2 0 4-1 6-3"/></svg><h2>PELAGEA</h2><p>Exotic aquatic collection</p></div>
+      <nav class="footer-column" aria-label="Footer menu"><h3>Menu</h3><a href="index.html">Home</a><a href="collection.html">Collection</a><a href="about.html">About us</a><a href="journal.html">Journal</a><a href="contact.html">Contact</a></nav>
+      <div class="footer-column"><h3>Customer care</h3><span>Shipping &amp; delivery</span><span>Returns &amp; refunds</span><span>FAQ</span><span>Care guide</span></div>
+      <div class="footer-column journal-information"><h3>Information</h3><a href="about.html">About Pelagea</a><a href="about.html">Ethical sourcing</a><span>Terms of service</span><span>Privacy policy</span></div>
+      <div class="newsletter"><h3>Join our world</h3><p>Subscribe for exclusive updates and new arrivals.</p><form><label for="journal-footer-email">Your email address</label><div class="input-row"><input id="journal-footer-email" type="email" autocomplete="email" placeholder="Your email address"><button type="submit" aria-label="Subscribe">&rarr;</button></div></form><div class="social-links"><span>Instagram</span><span>Facebook</span><span>Youtube</span></div></div>
+    </div>
+    <div class="page-shell footer-bottom"><p>&copy; 2026 Pelagea. All rights reserved.</p><div><span>Privacy policy</span><span>Terms of use</span></div></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
