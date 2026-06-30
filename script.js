@@ -160,3 +160,65 @@ document.querySelectorAll("form").forEach((form) => {
     button.setAttribute("aria-label", "Subscribed");
   });
 });
+
+const caseStudyTranslationSource = document.getElementById("case-study-translations");
+
+if (caseStudyTranslationSource) {
+  let caseStudyTranslations = {};
+
+  try {
+    caseStudyTranslations = JSON.parse(caseStudyTranslationSource.textContent || "{}");
+  } catch (error) {
+    caseStudyTranslations = {};
+  }
+
+  const languageButtons = document.querySelectorAll("[data-lang]");
+  const availableLanguages = Object.keys(caseStudyTranslations);
+  const savedLanguage = localStorage.getItem("pelagea-case-language");
+  const browserLanguage = (navigator.language || "en").slice(0, 2);
+  const initialLanguage = availableLanguages.includes(savedLanguage)
+    ? savedLanguage
+    : availableLanguages.includes(browserLanguage)
+      ? browserLanguage
+      : "en";
+
+  const applyCaseStudyLanguage = (language) => {
+    const dictionary = caseStudyTranslations[language] || caseStudyTranslations.en;
+    if (!dictionary) return;
+
+    document.documentElement.lang = language;
+    if (dictionary.pageTitle) document.title = dictionary.pageTitle;
+
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription && dictionary.metaDescription) {
+      metaDescription.setAttribute("content", dictionary.metaDescription);
+    }
+
+    document.querySelectorAll("[data-i18n]").forEach((element) => {
+      const key = element.dataset.i18n;
+      if (key && dictionary[key]) element.textContent = dictionary[key];
+    });
+
+    document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
+      const key = element.dataset.i18nPlaceholder;
+      if (key && dictionary[key]) element.setAttribute("placeholder", dictionary[key]);
+    });
+
+    languageButtons.forEach((button) => {
+      const isActive = button.dataset.lang === language;
+      button.classList.toggle("is-active", isActive);
+      button.setAttribute("aria-pressed", String(isActive));
+    });
+
+    localStorage.setItem("pelagea-case-language", language);
+  };
+
+  languageButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const language = button.dataset.lang || "en";
+      applyCaseStudyLanguage(language);
+    });
+  });
+
+  applyCaseStudyLanguage(initialLanguage);
+}
