@@ -12,6 +12,20 @@ export const asset = {
   abyss: "/assets/abyss.png",
   journal: "/assets/journal-editorial.png",
   research: "/assets/research-atelier.png",
+  species: {
+    glassRibbonfish: "/assets/species/glass-ribbonfish.png",
+    opalineCoralFan: "/assets/species/opaline-coral-fan.png",
+    azureVeilTang: "/assets/species/azure-veil-tang.png",
+    velvetLanternMedusa: "/assets/species/velvet-lantern-medusa.png",
+    nocturneSailfin: "/assets/species/nocturne-sailfin.png",
+    blueAshCtenophore: "/assets/species/blue-ash-ctenophore.png",
+    cobaltHaloSquid: "/assets/species/cobalt-halo-squid.png",
+    inkglassDragonet: "/assets/species/inkglass-dragonet.png",
+    lumenThreadStar: "/assets/species/lumen-thread-star.png",
+    abyssalPearlAngler: "/assets/species/abyssal-pearl-angler.png",
+    blackwaterGlassEel: "/assets/species/blackwater-glass-eel.png",
+    sableCrownMedusa: "/assets/species/sable-crown-medusa.png",
+  },
 };
 
 export type Species = {
@@ -52,7 +66,7 @@ export const depthZones: DepthZone[] = [
         description:
           "A translucent, silver-veined specimen selected for private reef salons and museum light studies.",
         price: "$42,000",
-        image: asset.philosophy,
+        image: asset.species.glassRibbonfish,
       },
       {
         name: "Opaline Coral Fan",
@@ -60,7 +74,7 @@ export const depthZones: DepthZone[] = [
         description:
           "A slow-growing living structure with pearl-toned branches and a certified conservation lineage.",
         price: "$58,000",
-        image: asset.philosophy,
+        image: asset.species.opalineCoralFan,
       },
       {
         name: "Azure Veil Tang",
@@ -68,7 +82,7 @@ export const depthZones: DepthZone[] = [
         description:
           "A calm, highly responsive fish prized for its shifting blue body and restrained movement.",
         price: "$31,500",
-        image: asset.hero,
+        image: asset.species.azureVeilTang,
       },
     ],
   },
@@ -89,7 +103,7 @@ export const depthZones: DepthZone[] = [
         description:
           "A drifting gelatinous form with subtle internal glow, reserved for low-light research environments.",
         price: "$86,000",
-        image: asset.twilight,
+        image: asset.species.velvetLanternMedusa,
       },
       {
         name: "Nocturne Sailfin",
@@ -97,7 +111,7 @@ export const depthZones: DepthZone[] = [
         description:
           "A dark-bodied species with matte fins and a calm feeding rhythm suited to panoramic aquaria.",
         price: "$74,000",
-        image: asset.twilight,
+        image: asset.species.nocturneSailfin,
       },
       {
         name: "Blue Ash Ctenophore",
@@ -105,7 +119,7 @@ export const depthZones: DepthZone[] = [
         description:
           "A fragile comb jelly whose light moves in controlled waves, handled only through research partners.",
         price: "$112,000",
-        image: asset.twilight,
+        image: asset.species.blueAshCtenophore,
       },
     ],
   },
@@ -126,7 +140,7 @@ export const depthZones: DepthZone[] = [
         description:
           "A rare cephalopod whose mantle emits a controlled halo under pressure-balanced observation.",
         price: "$148,000",
-        image: asset.twilight,
+        image: asset.species.cobaltHaloSquid,
       },
       {
         name: "Inkglass Dragonet",
@@ -134,7 +148,7 @@ export const depthZones: DepthZone[] = [
         description:
           "A nearly black species with fine iridescent edges, selected for collectors of living shadow.",
         price: "$175,000",
-        image: asset.abyss,
+        image: asset.species.inkglassDragonet,
       },
       {
         name: "Lumen Thread Star",
@@ -142,7 +156,7 @@ export const depthZones: DepthZone[] = [
         description:
           "A delicate organism with threadlike arms and faint cyan luminescence, available by research permit.",
         price: "$204,000",
-        image: asset.abyss,
+        image: asset.species.lumenThreadStar,
       },
     ],
   },
@@ -163,7 +177,7 @@ export const depthZones: DepthZone[] = [
         description:
           "An extraordinary deep-sea presence with one restrained light point and an unmatched acquisition protocol.",
         price: "Private",
-        image: asset.abyss,
+        image: asset.species.abyssalPearlAngler,
       },
       {
         name: "Blackwater Glass Eel",
@@ -171,7 +185,7 @@ export const depthZones: DepthZone[] = [
         description:
           "A nearly invisible species documented by Pelagea's private research network before release.",
         price: "Private",
-        image: asset.abyss,
+        image: asset.species.blackwaterGlassEel,
       },
       {
         name: "Sable Crown Medusa",
@@ -179,7 +193,7 @@ export const depthZones: DepthZone[] = [
         description:
           "The rarest living artwork in the Pelagea archive, shown only to institutional and private patrons.",
         price: "On request",
-        image: asset.abyss,
+        image: asset.species.sableCrownMedusa,
       },
     ],
   },
