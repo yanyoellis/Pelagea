@@ -377,6 +377,16 @@ h2,
   line-height: 1.62;
 }
 
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 28px;
+}
+
+.hero-case-link {
+  color: var(--muted);
+}
+
 .slide-index {
   position: absolute;
   top: 50%;
@@ -1027,6 +1037,12 @@ h2,
   .hero p {
     max-width: 280px;
     margin-bottom: 35px;
+  }
+
+  .hero-actions {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 18px;
   }
 
   .slide-index,
